@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #CEF6E3;
+                font-family: sans-serif;
+            }
+            .login {
+                width: 300px;
+                height: 350px;
+                /*background-color: green;*/
+                text-align: center;
+                border:1px solid grey;
+                border-radius: 10px;
+                margin: 0 auto;
+                background-color: white;
+            }
+            input[type=text], select {
+               	width: 200px;
+                height: 40px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                padding-left: 20px;
+                display: inline-block;
+            }
+            input[type=password], select {
+               	width: 200px;
+                height: 40px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                padding-left: 20px;
+                display: inline-block;
+            }
+
+            input[type=submit]{
+                width: 200px;
+                height: 40px;
+                border-radius: 5px;
+                border:none;
+                background-color: #04B45F;
+                color: white;
+            }
+            h1{
+                display: inline-block;
+                color: #868787;
+            }
+            a{
+                float: right;
+                padding-right: 40px;
+                margin-top: 20px;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>Login Page</h1>
+            <form action="login" method="POST">
+                Username: <input type="text" name="txtUsername" value="" placeholder="Enter Username"/> <br/>
+                Password: <input type="password" name="txtPassword" value="" placeholder="Enter Password"/> <br/>
+                <input type="submit" value="Login" />
+            </form> <br/>
+            <a href="createNewAccount.html">Register</a>
+        </div>
+    </body>
+</html>
